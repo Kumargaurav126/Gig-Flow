@@ -30,10 +30,12 @@ router.post('/login', async (req, res) => {
 
     const token = jwt.sign({ id: user._id, name: user.name }, process.env.JWT_SECRET, { expiresIn: '1d' });
 
+    const isProduction = process.env.NODE_ENV === 'production';
+
     res.cookie('token', token, {
       httpOnly: true,
-      secure: false, 
-      sameSite: 'lax',
+      secure: isProduction, 
+      sameSite: isProduction ? 'none' : 'lax', 
       maxAge: 24 * 60 * 60 * 1000 
     }).json({
       id: user._id,
@@ -46,7 +48,13 @@ router.post('/login', async (req, res) => {
 });
 
 router.post('/logout', (req, res) => {
-  res.clearCookie('token').json({ message: 'Logged out' });
+  const isProduction = process.env.NODE_ENV === 'production';
+
+  res.clearCookie('token', {
+    httpOnly: true,
+    secure: isProduction,
+    sameSite: isProduction ? 'none' : 'lax', 
+  }).json({ message: 'Logged out' });
 });
 
 module.exports = router;
