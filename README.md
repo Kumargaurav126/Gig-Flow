@@ -91,10 +91,12 @@ Start the backend server:
 
 You should see: 🚀 Server running on port 5000 and ✅ MongoDB Connected
 
+
 ### 2. Frontend Setup
 Open a new terminal (keep the backend running) and navigate to the frontend folder:
 
 ` cd frontend `
+
 ` npm install `
 
 Start the React development server:
@@ -104,11 +106,13 @@ Start the React development server:
 You should see: Local: http://localhost:5173/
 
 
+
 ## 🏃‍♂️ Running the Application
 * Ensure your MongoDB is running (or your Atlas URI is correct).
 * Open Terminal 1: Run Backend (npm run dev inside /backend).
 * Open Terminal 2: Run Frontend (npm run dev inside /frontend).
 * Open your browser and navigate to: http://localhost:5173
+
 
 
 
