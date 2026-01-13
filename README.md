@@ -60,10 +60,13 @@ You need to configure environment variables for both the Backend and Frontend.
 ### **1. Backend .env**
 Create a file named `.env` inside the `backend/` folder:
 
-`PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_super_secret_jwt_key
-CLIENT_URL=http://localhost:5173`
+`PORT=5000`
+
+`MONGO_URI=your_mongodb_connection_string`
+
+`JWT_SECRET=your_super_secret_jwt_key`
+
+`CLIENT_URL=http://localhost:5173`
 
 
 ## 🚀 Installation & Setup
@@ -72,16 +75,17 @@ CLIENT_URL=http://localhost:5173`
 Open a terminal and navigate to the backend folder:
 
 ` cd backend `
+
 ` npm install `
 
 
 Start the backend server:
 
-* Using Nodemon (Recommended for development)
+* **Using Nodemon (Recommended for development)**
   
 ` npm run dev `
 
-* OR using standard Node
+* **OR using standard Node**
   
 ` node server.js `
 
@@ -99,10 +103,12 @@ Start the React development server:
 
 You should see: Local: http://localhost:5173/
 
+
 ## 🏃‍♂️ Running the Application
 * Ensure your MongoDB is running (or your Atlas URI is correct).
 * Open Terminal 1: Run Backend (npm run dev inside /backend).
 * Open Terminal 2: Run Frontend (npm run dev inside /frontend).
 * Open your browser and navigate to: http://localhost:5173
+
 
 
