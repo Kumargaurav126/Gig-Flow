@@ -77,10 +77,10 @@ Open a terminal and navigate to the backend folder:
 
 Start the backend server:
 
-# Using Nodemon (Recommended for development)
+### Using Nodemon (Recommended for development)
 ` npm run dev `
 
-# OR using standard Node
+### OR using standard Node
 ` node server.js `
 You should see: 🚀 Server running on port 5000 and ✅ MongoDB Connected
 
@@ -101,3 +101,4 @@ You should see: Local: http://localhost:5173/
 * Open Terminal 1: Run Backend (npm run dev inside /backend).
 * Open Terminal 2: Run Frontend (npm run dev inside /frontend).
 * Open your browser and navigate to: http://localhost:5173
+
