@@ -100,4 +100,4 @@ router.patch('/:bidId/hire', verifyToken, async (req, res) => {
   }
 });
 
-module.exports = router;
+module.exports = router;  
